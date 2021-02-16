@@ -36,7 +36,7 @@ const AppHero = () => {
 
     return (
       <section className="heroBlock">
-         <Carousel autoplay >
+         <Carousel autoplay arrows="true" speed="400" >
           {
             items.map(item => {
 

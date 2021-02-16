@@ -2,16 +2,16 @@
     box-sizing: border-box;
     margin:0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;
     font-weight: 800;
   
 }
 
 /* Layout styles */
-.App{
-    width: 95%;
+/* .App{
+    width: 90%;
     margin:0 auto;
-}
+}  */
 
 /* Header styles*/
 .brandName{
@@ -22,7 +22,8 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
+    margin:0 auto;
     list-style-type: none;
     padding:1em .5em; 
 }
@@ -61,4 +62,84 @@
     border-radius:3px ;
     padding: 20px;
     
+}
+
+/* Home cards styles */
+
+.homeCards{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-around;
+    margin: 3em;
+}
+
+.cardHead{
+
+}
+
+/* Contact cards */
+.contactCards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactCard{
+    flex-grow: 1;
+    border: 2px solid black;
+    background-color: rgb(236, 136, 136);
+    margin: 1em;
+    padding: .8em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contactIcon{
+    font-size: 2rem;
+    padding: .4em;
+}
+
+/* Products */
+.productsContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.productsHeader{
+    font-size: 2rem;
+    color: rgb(223, 87, 87);
+    font-family: 'Merienda', cursive !important; 
+}
+
+.callActions{
+    display: flex;
+}
+
+.callAction{
+    flex-grow: 1;
+    border: 1px solid rgb(223, 87, 87);
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(19,26,34);
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.footerBar{
+    list-style-type: none;
+}
+
+.socialmedia{
+    background-color: rgb(19,26,34);
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia-link{
+    padding: 1em;
 }

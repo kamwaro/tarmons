@@ -5,9 +5,9 @@ import Fish from './assets/icons/fish.png'
 
 const AppCards = () => {
     return (
-        <ul>
+        <ul className="homeCards">
             <li>
-                <p>Pork</p>
+                <p className="cardHead">Pork</p>
                 <section>
                 <img src={Pig} width="50px" height="50px"></img>
                 <p>Get the Best of your pork from us</p>
@@ -15,7 +15,7 @@ const AppCards = () => {
                 </section>       
             </li>
             <li>
-                <p>Chicken</p>
+                <p className="cardHead">Chicken</p>
                 <section>
                 <img src={Chicken} width="50px" height="50px"></img>
                 <p>Ridiculously tantalizing chicken</p>
@@ -23,7 +23,7 @@ const AppCards = () => {
                 </section>     
             </li>
             <li>
-                <p>Fish</p>
+                <p className="cardHead">Fish</p>
                 <section>
                 <img src={Fish}width="50px" height="50px"  ></img>
                 <p>So good you cant help but order twice!</p>
