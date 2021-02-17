@@ -1,11 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const AppFooter = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({top:0, left:0, behavior:'smooth'})
+    }
+
     return (
-        <div>
+        <div className="footerContainer">
              <div className="footer">
             <ul className="footerBar">
-                <li>Our Contacts</li>
+                <li className="footerHead">Our Contacts</li>
                 <li>We are located at:</li>
                 <li>Icipe Road</li>
                 <li>Karasani,Nairobi</li>
@@ -14,31 +20,31 @@ const AppFooter = () => {
                 <li>info@tarmons.co.ke</li>
             </ul>
             <ul className="footerBar">
-                <li>Pork</li>
+                <li className="footerHead">Pork</li>
                 <li>Pork Chops</li>
                 <li>Pork Ribs</li>
                 <li>Pork Shoulder</li>
                 <li>Ham</li>
                 <li>Pork belly</li>
-                <li>View More</li>
+                <li onClick={scrollToTop}><Link to="/pork">View More</Link></li>
             </ul>
             <ul className="footerBar">
-                <li>Chicken</li>
+                <li className="footerHead">Chicken</li>
                 <li>Chicken Drumsticks</li>
                 <li>Chicken Breast</li>
                 <li>Chicken wings</li>
                 <li>Chicken Gizzard</li>
                 <li>Chicken legs</li>
-                <li>View More</li>
+                <li onClick={scrollToTop}>View More<Link to="chicken"></Link></li>
             </ul>
             <ul className="footerBar">
-                <li>Fish</li>
+                <li className="footerHead">Fish</li>
                 <li>Whole redsnapper</li>
                 <li>Tuna</li>
                 <li>Calamari</li>
                 <li>Salmon fish</li>
                 <li>Prawns</li>
-                <li>View More</li>
+                <li onClick={scrollToTop}><Link to="fish">View More</Link></li>
             </ul>
         </div>
 
@@ -50,6 +56,10 @@ const AppFooter = () => {
             </ul>
 
         </div>
+        <div className="copyright">
+            <p>Tarmons Caterers &amp; Investments &copy; 2021</p>
+        </div>
+       
 
         </div>
        

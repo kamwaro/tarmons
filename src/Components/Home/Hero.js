@@ -1,8 +1,8 @@
 import React from 'react'
 import { Carousel } from 'antd';
-import Chicken from './assets/chicken/kienyeji.jpg'
-import Pork from './assets/pork/porkbelly.jpg'
-import Fish from './assets/fish/samaki.jpg'
+import Chicken from '../assets/chicken/kienyeji.jpg'
+import Pork from '../assets/pork/porkbelly.jpg'
+import Fish from '../assets/fish/samaki.jpg'
 
 
 
@@ -36,14 +36,14 @@ const AppHero = () => {
 
     return (
       <section className="heroBlock">
-         <Carousel autoplay arrows="true" speed="400" >
+         <Carousel autoplay arrows="true">
           {
             items.map(item => {
 
               return(
                 <div  key={item.key} >
-                  <h3 style={{fontSize:'1.2rem'}} >{item.name}</h3>
-                   <p >{item.content}</p>
+                  <h3 style={{fontSize:'1.2rem'}} className="productName" >{item.name}</h3>
+                   <p className="productName">{item.content}</p>
                    <img style={{display:'inline-block'}} src={item.background} width="500px" height="500px"/>
                 </div>  
               )

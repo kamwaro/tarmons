@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Drumsticks from './assets/chicken/drumsticks.png';
-import ChickenBreast from './assets/chicken/chickenbreast.jpg'
-import fish from './assets/fish/samaki.jpg'
-import fish2 from './assets/fish/kasamaki.jpg'
-import porkchops from './assets/pork/porkchops.jpg'
-import cookedPork from './assets/pork/slowcookedpork.jpg'
+import Drumsticks from '../assets/chicken/drumsticks.png';
+import ChickenBreast from '../assets/chicken/chickenbreast.jpg'
+import fish from '../assets/fish/samaki.jpg'
+import fish2 from '../assets/fish/kasamaki.jpg'
+import porkchops from '../assets/pork/porkchops.jpg'
+import cookedPork from '../assets/pork/slowcookedpork.jpg'
 
 import {Row, Col} from 'antd'
 
@@ -63,20 +63,18 @@ const AppProducts = () => {
                             <p>{item.name}</p>
                             <p>{item.price}</p>
                             <div className="callActions">
-                                <p className="callAction">
-                                <a href="#">
+                            <a href="tel:+254719751768" className="callAction">
+                               
                 <i className="fa fa-phone" aria-hidden="true" ></i>
-                    Call to order
-                                 </a>
-
-                                </p >
-                                <p className="callAction">
-                                <a href="#">
+                                    Call to order
+                              
+                                </a>
+                                <a className="callAction whatsApp"  href="https://wa.me/+254719751768"
+        target="_blank"
+        rel="noopener noreferrer">                  
                 <i className="fab fa-whatsapp " aria-hidden="true"></i>
                     Whatsapp
-                </a>
-
-                                </p>
+               </a>
                                 
                             </div>
                         </Col>
