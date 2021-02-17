@@ -35,7 +35,7 @@ const AppFooter = () => {
                 <li>Chicken wings</li>
                 <li>Chicken Gizzard</li>
                 <li>Chicken legs</li>
-                <li onClick={scrollToTop}>View More<Link to="chicken"></Link></li>
+                <li onClick={scrollToTop}><Link to="/chicken">View More</Link></li>
             </ul>
             <ul className="footerBar">
                 <li className="footerHead">Fish</li>
@@ -44,7 +44,7 @@ const AppFooter = () => {
                 <li>Calamari</li>
                 <li>Salmon fish</li>
                 <li>Prawns</li>
-                <li onClick={scrollToTop}><Link to="fish">View More</Link></li>
+                <li onClick={scrollToTop}><Link to="/fish">View More</Link></li>
             </ul>
         </div>
 

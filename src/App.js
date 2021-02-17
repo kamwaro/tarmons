@@ -5,7 +5,7 @@ import Contact from './Views/Contact'
 import Pork from './Views/Pork'
 import Chicken from './Views/Chicken'
 import Fish from './Views/Fish'
-import {Route,Switch} from 'react-router-dom';
+import {Route,Switch,Redirect} from 'react-router-dom';
 
 
 function App() {
@@ -26,6 +26,9 @@ function App() {
         </Route>
         <Route path="/fish">
           <Fish/>
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/home" />
         </Route>
       </Switch>
      

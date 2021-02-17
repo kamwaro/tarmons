@@ -3,6 +3,9 @@ import { Carousel } from 'antd';
 import Chicken from '../assets/chicken/kienyeji.jpg'
 import Pork from '../assets/pork/porkbelly.jpg'
 import Fish from '../assets/fish/samaki.jpg'
+import PorkRibs from '../assets/pork/porkribs.jpg'
+import CookedPork from '../assets/pork/slowcookedpork.jpg'
+
 
 
 
@@ -28,6 +31,18 @@ const AppHero = () => {
       name:'Fish',
       content:"Tarmons Fish",
       background: Fish
+    },
+    {
+      key:4,
+      name:'Pork Ribs',
+      content:"Tarmons Pork Ribs",
+      background: PorkRibs
+    },
+    {
+      key:5,
+      name:'Marinated Pork',
+      content:"Tarmons Special",
+      background: CookedPork
     }
   ]
 
@@ -36,7 +51,7 @@ const AppHero = () => {
 
     return (
       <section className="heroBlock">
-         <Carousel autoplay arrows="true">
+         <Carousel autoplay arrows="true" infinte="true">
           {
             items.map(item => {
 
@@ -44,7 +59,7 @@ const AppHero = () => {
                 <div  key={item.key} >
                   <h3 style={{fontSize:'1.2rem'}} className="productName" >{item.name}</h3>
                    <p className="productName">{item.content}</p>
-                   <img style={{display:'inline-block'}} src={item.background} width="500px" height="500px"/>
+                   <img style={{display:'inline-block'}} src={item.background} id="responsive-image" />
                 </div>  
               )
             })

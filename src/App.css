@@ -50,7 +50,11 @@ font-family: 'Poppins', sans-serif;
     align-items:'center';
     font-family: 'Merienda', cursive !important; 
 }
- 
+
+#responsive-image{
+    width:500px;
+    height:500px
+}
 /*Buttons  */
 .btn{
     border:none;
@@ -243,6 +247,12 @@ font-family: 'Poppins', sans-serif;
     margin: .5em 1em;
 }
 
+/* carousel */
+.slick-dots li{
+    background-color: #000;
+    color: #000 !important;
+}
+
 /* Footer */
 
 .footerContainer{
@@ -251,7 +261,7 @@ font-family: 'Poppins', sans-serif;
 }
 .footer{
     display: flex;
-    padding: 2em 0;
+    padding: 2em 0 1em;
     justify-content: space-around;
     background-color: rgb(19,26,34);
     color: #ccc;
@@ -287,4 +297,36 @@ font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 1rem;
     padding: 1em;
+}
+
+
+@media(max-width:780px){
+/* Cards */
+.homeCards{
+    flex-direction: column;
+}
+/* Contact cards */
+.contactCards{
+    flex-direction: column;
+}
+/* hero images */
+#responsive-image{
+    width: 350px;
+    height: 350px;
+}
+
+/* contactMessageBox */
+.contactMessageBox{
+    flex-direction: column;
+}
+
+/* formBox */
+.formBox{
+    flex-direction: column;
+}
+/* footer */
+.footer{
+    flex-direction: column;
+    text-align: center;
+}
 }
