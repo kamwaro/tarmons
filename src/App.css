@@ -301,6 +301,11 @@ font-family: 'Poppins', sans-serif;
 
 
 @media(max-width:780px){
+
+/* navbar */
+.active{
+    border-bottom:none;
+}    
 /* Cards */
 .homeCards{
     flex-direction: column;

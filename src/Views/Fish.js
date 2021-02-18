@@ -1,13 +1,13 @@
 import React from 'react'
 
-import AppHeader from '../Components/Common/Header'
+import AppNavbar from '../Components/Common/Header/Navbar/Navbar'
 import AppFooter from '../Components/Common/Footer'
 import AppFishProducts from '../Components/Fish/FishProducts'
 
 const AppFish = () => {
     return (
         <div style={{textAlign:"center",marginBottom:"1em",position:"relative"}}>
-            <AppHeader/>
+            <AppNavbar/>
             <AppFishProducts/>
             <AppFooter/>
         </div>
