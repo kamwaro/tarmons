@@ -13,7 +13,7 @@ class AppNavbar extends Component {
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo"><i className="fas fa-utensils"></i>Tarmons</h1>
+                <NavLink to="/home"  style={{borderBottom: "none"}}><h1 className="navbar-logo" ><i className="fas fa-utensils"></i>Tarmons</h1></NavLink>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>

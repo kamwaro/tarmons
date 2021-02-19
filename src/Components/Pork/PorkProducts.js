@@ -63,7 +63,7 @@ const items = [
                             <p>{item.price}</p>
                             <div className="callActions">
                                 <p className="callAction">
-                                <a href="#" className="callActionLink">
+                                <a href="tel:+254719751768" className="callActionLink">
                 <i className="fa fa-phone" aria-hidden="true" ></i>
                     Call to order
                                  </a>
