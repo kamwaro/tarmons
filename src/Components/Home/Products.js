@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect,useRef} from 'react'
 
 import Drumsticks from '../assets/chicken/drumsticks.png';
 import ChickenBreast from '../assets/chicken/chickenbreast.jpg'
@@ -8,6 +8,11 @@ import porkchops from '../assets/pork/porkchops.jpg'
 import cookedPork from '../assets/pork/slowcookedpork.jpg'
 
 import {Row, Col} from 'antd'
+
+import {textIntro} from "../animate.js"
+
+
+
 
 
 const items = [
@@ -51,14 +56,22 @@ const items = [
 
 
 const AppProducts = () => {
+
+    //using useRef hook to access the textIntro DOM
+        let intro = useRef(null);
+
+        useEffect(() => {
+        textIntro(intro)
+        }, [])
+
     return (
       <>
-        <h3 className="productsHeader">Featured Products</h3>
+        <h3 className="productsHeader intro"  ref={(el) => (intro = el)}>Featured Products</h3>
         <Row gutter={[16,16]}>
             {
                 items.map(item => {
                     return (
-                        <Col span={8} xs={24} xl={8} key={item.key}>
+                        <Col span={8} xs={24} xl={8} key={item.key} >
                             <img src={item.image} width="300px" height="300px" style={{borderRadius:"5px"}}/>
                             <p>{item.name}</p>
                             <p>{item.price}</p>

@@ -1,23 +1,27 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { MenuItems } from "./MenuItems"
 import {NavLink} from 'react-router-dom'
 import './Navbar.css'
 
-class AppNavbar extends Component {
-    state = { clicked: false }
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
+const AppNavbar  =  () =>  {
+
+    let [clicked,setClicked] = useState(false)
+    // state = { clicked: false }
+
+    const handleClick = () => {
+        setClicked( !clicked )
     }
-
-    render() {
+  
+  
+    
         return(
             <nav className="NavbarItems">
-                <NavLink to="/home"  style={{borderBottom: "none"}}><h1 className="navbar-logo" ><i className="fas fa-utensils"></i>Tarmons</h1></NavLink>
-                <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                <NavLink to="/home"  style={{borderBottom: "none"}}><h1 className="navbar-logo"><i className="fas fa-utensils"></i>Tarmons</h1></NavLink>
+                <div className="menu-icon" onClick={handleClick}>
+                    <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                <ul className={clicked ? 'nav-menu activated' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
@@ -32,6 +36,6 @@ class AppNavbar extends Component {
             </nav>
         )
     }
-}
+
 
 export default AppNavbar

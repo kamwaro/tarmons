@@ -12,20 +12,26 @@ const AppCards = () => {
 
     return (
         <ul className="homeCards">
+           
             <li>
                 <p className="cardHead">Pork</p>
                 <section>
                 <img src={Pig} width="50px" height="50px"></img>
                 <p className="productName">Get the Best of your pork from us</p>
-               <button className="btn btn-large btn-card" onClick={scrollToTop}> <Link to="/pork">View More</Link></button>
+                <Link to="/pork">
+               <button className="btn btn-large btn-card" onClick={scrollToTop}> View More</button>
+               </Link>
                 </section>       
             </li>
+           
             <li>
                 <p className="cardHead">Chicken</p>
                 <section>
                 <img src={Chicken} width="50px" height="50px"></img>
                 <p className="productName">Ridiculously tantalizing chicken</p>
-                <button onClick={scrollToTop}  className="btn btn-large btn-card"><Link to="/chicken">View More</Link></button>
+                <Link to="/chicken">
+                <button onClick={scrollToTop}  className="btn btn-large btn-card">View More</button>
+                </Link>
                 </section>     
             </li>
             <li>
@@ -33,7 +39,9 @@ const AppCards = () => {
                 <section>
                 <img src={Fish}width="50px" height="50px"  ></img>
                 <p className="productName">So good you cant help but order twice!</p>
-                <button onClick={scrollToTop} className="btn btn-large btn-card"><Link to="/fish">View More</Link></button>
+                <Link to="/fish" >
+                <button onClick={scrollToTop} className="btn btn-large btn-card" >View More</button>
+                </Link>
                 </section>
             </li> 
         </ul>
