@@ -88,8 +88,8 @@ const items = [
                                 <p className="callAction">
                                 <a href="https://wa.me/+254719751768"
         target="_blank"
-        rel="noopener noreferrer" className="callActionLink">
-                <i className="fab fa-whatsapp whatsApp" aria-hidden="true"></i>
+        rel="noopener noreferrer" className="callActionLink whatsApp">
+                <i className="fab fa-whatsapp" aria-hidden="true"></i>
                     Whatsapp
                 </a>
 
